@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>UAS Pemrograman Web 1</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="konten" style="float:left;">
+<form name="form">
+    <br>
+    <h2 style="text-align: center;">UAS Pemrograman Web Semester 1</h2>
+    <h2>Pemesanan Tiket Pesawat</h2>
+    <table border="0" style="float: left;" id="inputdata">
+        <tr>
+            <td>
+            <label>Nama</label>
+            </td>
+            <td><input type="text" id="inp_nama" name="inp_nama"></td>
+        </tr>
+
+        <tr>
+            <td><label>Jumlah Tiket</label></td>
+            <td><input type="number" id="inp_jumlah" name=""></td>
+        </tr>
+
+        <tr>
+            <td><label>Tujuan</label></td>
+            <td>
+                <select id="inp_tujuan">
+                    <option>Pilih Tujuan</option><br>
+                    <option value="Bali">Bali</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Semarang">Semarang</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Kelas</label></td>
+            <td>
+                <select  id="inp_kelas">
+                    <option>Kelas</option>
+                    <option value="1" name="Ekonomi">Ekonomi</option>
+                    <option value="2" name="Bisnis">Bisnis</option>
+                    <option value="3" name="Eksekutif">Eksekutif</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="bagasi">Bagasi (kg)</label>
+            </td>
+            <td>
+                <input type="radio" name="bagasi" id="bg1" value="5">5
+                <input type="radio" name="bagasi" id="bg2" value="10">10
+                <input type="radio" name="bagasi" id="bg3" value="15">15
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Asuransi</label></td>
+            <td>
+                <input type="checkbox" name="asuransi" id="asuransi1" value="Asuransi Jiwa">Asuransi Jiwa <br>
+                <input type="checkbox" name="asuransi" id="asuransi2" value="Asuransi Kecelakaan">Asuransi Kecelakaan <br>
+                <input type="checkbox" name="asuransi" id="asuransi3" value="Asuransi Keterlambatan">Asuransi Keterlambatan
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="Simpan" onclick="tampilkan()" id="btn-tampil">
+            </td>
+        </tr>
+    </table>
+  <!-- <center><input type="button" value="PESAN" onclick="pesan()" name=""></center> -->
+</form>
+
+<table border="0" id="tampildata" style="float: left;">
+        <tr>
+            <td>
+                <label>Nama</label>
+            </td>
+            <td>
+                : <label id="tampilnama"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Jumlah Tiket</label>
+            </td>
+            <td>
+                : <label id="tampiljumlah"></label>
+                  <label id="disc"></label>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Tujuan</label></td>
+            <td>
+                : <label id="tampiltujuan"></label>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Kelas</label></td>
+            <td>
+                : <label id="tampilkelas"></label>
+                  <label id="tampilbonus"></label>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Harga Tiket</label></td>
+            <td>
+                : <label id="tampilharga"></label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="bagasi">Bagasi (kg)</label>
+            </td>
+            <td> : <label id="tampilbagasi"></label>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Biaya Bagasi</label></td>
+            <td>: <label id="tampilhargabagasi"></label></td>
+        </tr>
+
+        <tr>
+            <td><label>Asuransi</label></td>
+            <td> : <label id="tampilasuransi"></label>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Biaya Asuransi</label></td>
+            <td> : <label id="tampilbiayaAsuransi"></label>
+            </td>
+        </tr>
+
+        <tr id="total">
+            <td><label>TOTAL</label></td>
+            <td>: <label id="inp_total"></label></td>
+        </tr>
+</table>
+
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

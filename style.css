@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+.konten{
+    margin: auto;
+    width: 1200px;
+    height: 600px;
+    margin-top: 2%;
+    background-color: none;
+    box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.2);;
+    border-radius: 2px;
+}
+
+.konten form h2{
+    margin-left: 30px;
+}
+
+#inputdata{
+    margin: 0 auto;
+    width: 400px;
+    margin-left: 30px;
+    margin-right: 10px;
+    background-color: none;
+    border-radius: 2px;
+}
+
+#inputdata tr,td{
+    border-bottom: 2px solid #35858B;
+    padding: 10px;
+}
+
+#inputdata select,option{
+    border: 2px solid #35858B;
+    /*padding: 10px;*/
+    width: 175px;
+    height: 25px;
+    background: #35858B;
+    color: #fff;
+    font-weight: bold;
+}
+
+.konten #btn-tampil{
+    width: 130px;
+    height: 40px;
+    background: #35858B;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#tampildata{
+    margin-left: 5%;
+}
+
